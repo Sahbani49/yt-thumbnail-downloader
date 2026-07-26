@@ -1,68 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YouTube Thumbnail Downloader - تحميل الصور المصغرة</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f8f9fa;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+header{
+background:#ff0000;
+color:white;
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+max-width:700px;
+margin:40px auto;
+padding:20px;
+}
+
+input{
+width:100%;
+padding:15px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+margin-top:15px;
+padding:15px 30px;
+font-size:18px;
+background:#0066ff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004ecc;
+}
+
+#result img{
+max-width:100%;
+margin-top:20px;
+border-radius:10px;
+}
+
+.content{
+max-width:800px;
+margin:40px auto;
+padding:20px;
+background:white;
+text-align:right;
+line-height:1.8;
+}
+
+.download{
+display:block;
+margin:20px auto;
+background:green;
+color:white;
+padding:12px;
+width:150px;
+text-decoration:none;
+border-radius:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+YouTube Thumbnail Downloader
+</header>
+
+<div class="container">
+
+<h2>تحميل الصورة المصغرة من YouTube</h2>
+
+<input id="url" placeholder="ضع رابط فيديو YouTube هنا">
+
+<button onclick="getThumbnail()">
+استخراج الصورة
+</button>
+
+<div id="result"></div>
+
+</div>
+
+
 <section class="content">
 
-<h2>YouTube Thumbnail Downloader - تحميل الصور المصغرة من يوتيوب</h2>
+<h2>YouTube Thumbnail Downloader</h2>
 
 <p>
-مرحبًا بك في أداة تحميل الصور المصغرة من YouTube. 
-يمكنك الآن استخراج وتحميل صورة أي فيديو يوتيوب بجودة عالية وبشكل مجاني.
-كل ما عليك فعله هو نسخ رابط الفيديو، وضعه في الأداة، ثم الضغط على زر التحميل.
+أداة مجانية لتحميل الصور المصغرة من فيديوهات YouTube بجودة عالية.
+انسخ رابط الفيديو واحصل على الصورة خلال ثوانٍ.
 </p>
 
-<h2>تحميل صورة فيديو YouTube بجودة HD</h2>
-
-<p>
-تساعدك هذه الأداة على الحصول على الصور المصغرة الأصلية للفيديوهات بسرعة وسهولة.
-يمكن استخدامها من الهاتف أو الكمبيوتر بدون الحاجة إلى تثبيت برامج أو إنشاء حساب.
-</p>
-
-<h2>لماذا الصورة المصغرة مهمة في اليوتيوب؟</h2>
-
-<p>
-الصورة المصغرة هي أول عنصر يجذب انتباه المشاهدين.
-الصورة الاحترافية والواضحة تساعد أصحاب القنوات على زيادة نسبة النقرات وجذب جمهور أكبر.
-</p>
-
-<h2>مميزات أداة YouTube Thumbnail Downloader</h2>
+<h2>مميزات الأداة</h2>
 
 <ul>
 <li>تحميل الصور المصغرة مجانًا.</li>
-<li>دعم جودة HD و Full HD.</li>
-<li>سرعة في استخراج الصورة.</li>
-<li>لا يوجد تسجيل أو اشتراك.</li>
-<li>تعمل على جميع الأجهزة.</li>
+<li>جودة HD.</li>
+<li>لا تحتاج إلى تسجيل.</li>
+<li>تعمل على الهاتف والكمبيوتر.</li>
 </ul>
 
-<h2>طريقة تحميل صورة مصغرة من YouTube</h2>
+<h2>لماذا الصورة المصغرة مهمة؟</h2>
 
-<ol>
-<li>انسخ رابط فيديو YouTube.</li>
-<li>ألصق الرابط في مربع البحث.</li>
-<li>اضغط على زر استخراج الصورة.</li>
-<li>اضغط على زر تحميل الصورة.</li>
-</ol>
+<p>
+الصورة المصغرة الجذابة تساعد على زيادة عدد النقرات والمشاهدات في YouTube.
+</p>
 
 <h2>أسئلة شائعة</h2>
 
-<h3>هل الأداة مجانية؟</h3>
-<p>
-نعم، يمكنك تحميل الصور المصغرة مجانًا.
-</p>
-
-<h3>هل أحتاج إلى برنامج؟</h3>
-<p>
-لا، الأداة تعمل مباشرة من المتصفح.
-</p>
+<h3>هل الخدمة مجانية؟</h3>
+<p>نعم، يمكنك استعمالها مجانًا.</p>
 
 <h3>هل تعمل على الهاتف؟</h3>
-<p>
-نعم، يمكنك استعمالها على Android و iPhone والكمبيوتر.
-</p>
+<p>نعم، تعمل على جميع الأجهزة.</p>
 
 <h2>من نحن</h2>
 
 <p>
-نحن نقدم أداة بسيطة تساعد المستخدمين وصناع المحتوى على استخراج الصور المصغرة من فيديوهات YouTube بسهولة وسرعة.
-هدفنا توفير خدمة مجانية وسهلة الاستخدام للجميع.
+نقدم أداة بسيطة تساعد صناع المحتوى على استخراج صور YouTube المصغرة بسهولة.
 </p>
 
 </section>
+
+
+<script>
+
+function getThumbnail(){
+
+let url=document.getElementById("url").value;
+
+let id="";
+
+if(url.includes("watch?v=")){
+id=url.split("watch?v=")[1].substring(0,11);
+}
+
+if(url.includes("youtu.be/")){
+id=url.split("youtu.be/")[1].substring(0,11);
+}
+
+if(id==""){
+alert("رابط غير صحيح");
+return;
+}
+
+let image="https://img.youtube.com/vi/"+id+"/maxresdefault.jpg";
+
+document.getElementById("result").innerHTML=
+'<img id="thumb" src="'+image+'">'+
+'<a class="download" download="thumbnail.jpg" href="'+image+'">تحميل الصورة</a>';
+
+}
+
+</script>
+
+</body>
+</html>
