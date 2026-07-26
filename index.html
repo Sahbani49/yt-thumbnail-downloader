@@ -1,111 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YouTube Thumbnail Downloader</title>
+<section class="content">
 
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#f8f9fa;
-margin:0;
-padding:0;
-text-align:center;
-}
+<h2>YouTube Thumbnail Downloader - تحميل الصور المصغرة من يوتيوب</h2>
 
-header{
-background:#ff0000;
-color:white;
-padding:20px;
-font-size:28px;
-font-weight:bold;
-}
+<p>
+مرحبًا بك في أداة تحميل الصور المصغرة من YouTube. 
+يمكنك الآن استخراج وتحميل صورة أي فيديو يوتيوب بجودة عالية وبشكل مجاني.
+كل ما عليك فعله هو نسخ رابط الفيديو، وضعه في الأداة، ثم الضغط على زر التحميل.
+</p>
 
-.container{
-max-width:700px;
-margin:40px auto;
-padding:20px;
-}
+<h2>تحميل صورة فيديو YouTube بجودة HD</h2>
 
-input{
-width:100%;
-padding:15px;
-font-size:18px;
-border:1px solid #ccc;
-border-radius:8px;
-}
+<p>
+تساعدك هذه الأداة على الحصول على الصور المصغرة الأصلية للفيديوهات بسرعة وسهولة.
+يمكن استخدامها من الهاتف أو الكمبيوتر بدون الحاجة إلى تثبيت برامج أو إنشاء حساب.
+</p>
 
-button{
-margin-top:15px;
-padding:15px 30px;
-font-size:18px;
-background:#0066ff;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-}
+<h2>لماذا الصورة المصغرة مهمة في اليوتيوب؟</h2>
 
-button:hover{
-background:#004ecc;
-}
+<p>
+الصورة المصغرة هي أول عنصر يجذب انتباه المشاهدين.
+الصورة الاحترافية والواضحة تساعد أصحاب القنوات على زيادة نسبة النقرات وجذب جمهور أكبر.
+</p>
 
-#result img{
-max-width:100%;
-margin-top:20px;
-border-radius:10px;
-}
-</style>
+<h2>مميزات أداة YouTube Thumbnail Downloader</h2>
 
-</head>
-<body>
+<ul>
+<li>تحميل الصور المصغرة مجانًا.</li>
+<li>دعم جودة HD و Full HD.</li>
+<li>سرعة في استخراج الصورة.</li>
+<li>لا يوجد تسجيل أو اشتراك.</li>
+<li>تعمل على جميع الأجهزة.</li>
+</ul>
 
-<header>
-YouTube Thumbnail Downloader
-</header>
+<h2>طريقة تحميل صورة مصغرة من YouTube</h2>
 
-<div class="container">
+<ol>
+<li>انسخ رابط فيديو YouTube.</li>
+<li>ألصق الرابط في مربع البحث.</li>
+<li>اضغط على زر استخراج الصورة.</li>
+<li>اضغط على زر تحميل الصورة.</li>
+</ol>
 
-<h2>Download YouTube Thumbnail</h2>
+<h2>أسئلة شائعة</h2>
 
-<input id="url" placeholder="Paste YouTube URL here">
+<h3>هل الأداة مجانية؟</h3>
+<p>
+نعم، يمكنك تحميل الصور المصغرة مجانًا.
+</p>
 
-<button onclick="getThumbnail()">
-Get Thumbnail
-</button>
+<h3>هل أحتاج إلى برنامج؟</h3>
+<p>
+لا، الأداة تعمل مباشرة من المتصفح.
+</p>
 
-<div id="result"></div>
+<h3>هل تعمل على الهاتف؟</h3>
+<p>
+نعم، يمكنك استعمالها على Android و iPhone والكمبيوتر.
+</p>
 
-</div>
+<h2>من نحن</h2>
 
-<script>
+<p>
+نحن نقدم أداة بسيطة تساعد المستخدمين وصناع المحتوى على استخراج الصور المصغرة من فيديوهات YouTube بسهولة وسرعة.
+هدفنا توفير خدمة مجانية وسهلة الاستخدام للجميع.
+</p>
 
-function getThumbnail(){
-
-let url=document.getElementById("url").value;
-
-let id="";
-
-if(url.includes("watch?v=")){
-id=url.split("watch?v=")[1].substring(0,11);
-}
-
-if(url.includes("youtu.be/")){
-id=url.split("youtu.be/")[1].substring(0,11);
-}
-
-if(id==""){
-alert("Invalid YouTube URL");
-return;
-}
-
-document.getElementById("result").innerHTML=
-'<img src="https://img.youtube.com/vi/'+id+'/maxresdefault.jpg">';
-
-}
-
-</script>
-
-</body>
-</html>
+</section>
