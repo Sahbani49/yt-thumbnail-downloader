@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Thumbnail Downloader</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f8f9fa;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+header{
+background:#ff0000;
+color:white;
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+max-width:700px;
+margin:40px auto;
+padding:20px;
+}
+
+input{
+width:100%;
+padding:15px;
+font-size:18px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+margin-top:15px;
+padding:15px 30px;
+font-size:18px;
+background:#0066ff;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004ecc;
+}
+
+#result img{
+max-width:100%;
+margin-top:20px;
+border-radius:10px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+YouTube Thumbnail Downloader
+</header>
+
+<div class="container">
+
+<h2>Download YouTube Thumbnail</h2>
+
+<input id="url" placeholder="Paste YouTube URL here">
+
+<button onclick="getThumbnail()">
+Get Thumbnail
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function getThumbnail(){
+
+let url=document.getElementById("url").value;
+
+let id="";
+
+if(url.includes("watch?v=")){
+id=url.split("watch?v=")[1].substring(0,11);
+}
+
+if(url.includes("youtu.be/")){
+id=url.split("youtu.be/")[1].substring(0,11);
+}
+
+if(id==""){
+alert("Invalid YouTube URL");
+return;
+}
+
+document.getElementById("result").innerHTML=
+'<img src="https://img.youtube.com/vi/'+id+'/maxresdefault.jpg">';
+
+}
+
+</script>
+
+</body>
+</html>
