@@ -163,12 +163,14 @@ function getThumbnail(){
 
 let url=document.getElementById("url").value.trim();
 let id="";
-
 if(url.includes("watch?v=")){
 id=url.split("watch?v=")[1].substring(0,11);
 }
 else if(url.includes("youtu.be/")){
 id=url.split("youtu.be/")[1].substring(0,11);
+}
+else if(url.includes("shorts/")){
+id=url.split("shorts/")[1].substring(0,11);
 }
 
 if(id==""){
