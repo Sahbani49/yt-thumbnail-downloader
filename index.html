@@ -193,16 +193,20 @@ return;
 let hd="https://img.youtube.com/vi/"+id+"/maxresdefault.jpg";
 let hq="https://img.youtube.com/vi/"+id+"/hqdefault.jpg";
 
+
+
 let img=new Image();
 
 img.onload=function(){
 
-document.getElementById("result").innerHTML=
-'<img src="'+hd+'"><br><button onclick="downloadImage(\''+hd+'\')">Download Thumbnail+hd+'\')">
+document.getElementById("result").innerHTML =
+'<img src="'+hd+'"><br><button onclick="downloadImage(\''+hd+'\')">Download Thumbnail</button>';
+
+};
 
 img.onerror=function(){
 
-document.getElementById("result").innerHTML=
+document.getElementById("result").innerHTML =
 '<img src="'+hq+'"><br><button onclick="downloadImage(\''+hq+'\')">Download Thumbnail</button>';
 
 };
