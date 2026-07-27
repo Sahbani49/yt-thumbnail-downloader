@@ -37,6 +37,7 @@ padding:15px;
 font-size:18px;
 border:1px solid #ccc;
 border-radius:8px;
+box-sizing:border-box;
 }
 
 button{
@@ -69,18 +70,19 @@ text-align:right;
 line-height:1.8;
 }
 
+footer{
+padding:20px;
+}
+
 </style>
 
 </head>
 
-
 <body>
-
 
 <header>
 YouTube Thumbnail Downloader
 </header>
-
 
 <div class="container">
 
@@ -96,8 +98,6 @@ YouTube Thumbnail Downloader
 
 </div>
 
-
-
 <section class="content">
 
 <h2>YouTube Thumbnail Downloader</h2>
@@ -105,7 +105,6 @@ YouTube Thumbnail Downloader
 <p>
 أداة مجانية لاستخراج وتحميل الصور المصغرة من فيديوهات YouTube بجودة عالية.
 </p>
-
 
 <h2>طريقة الاستخدام</h2>
 
@@ -116,23 +115,20 @@ YouTube Thumbnail Downloader
 4- اضغط تحميل الصورة.
 </p>
 
-
 <h2>مميزات الأداة</h2>
 
 <ul>
 <li>مجانية.</li>
 <li>تعمل على الهاتف والكمبيوتر.</li>
-<li>جودة HD.</li>
+<li>جودة عالية.</li>
 <li>بدون تسجيل.</li>
 </ul>
-
 
 <h2>لماذا الصورة المصغرة مهمة؟</h2>
 
 <p>
 الصورة المصغرة الجذابة تساعد على زيادة المشاهدات وجذب انتباه المستخدمين.
 </p>
-
 
 <h2>أسئلة شائعة</h2>
 
@@ -142,54 +138,55 @@ YouTube Thumbnail Downloader
 <h3>هل أحتاج برنامج؟</h3>
 <p>لا، تعمل مباشرة من المتصفح.</p>
 
-
 <h2>من نحن</h2>
 
 <p>
 نقدم أداة سهلة تساعد صناع المحتوى على الحصول على صور YouTube المصغرة بسرعة.
 </p>
 
-
 </section>
-
-
 
 <script>
 
 function getThumbnail(){
 
-let url=document.getElementById("url").value;
-
+let url=document.getElementById("url").value.trim();
 let id="";
-
 
 if(url.includes("watch?v=")){
 id=url.split("watch?v=")[1].substring(0,11);
 }
-
-
-if(url.includes("youtu.be/")){
+else if(url.includes("youtu.be/")){
 id=url.split("youtu.be/")[1].substring(0,11);
 }
-
 
 if(id==""){
 alert("رابط غير صحيح");
 return;
 }
 
+let hd="https://img.youtube.com/vi/"+id+"/maxresdefault.jpg";
+let hq="https://img.youtube.com/vi/"+id+"/hqdefault.jpg";
 
-let image="https://img.youtube.com/vi/"+id+"/maxresdefault.jpg";
+let img=new Image();
 
+img.onload=function(){
 
 document.getElementById("result").innerHTML=
+'<img src="'+hd+'"><br><button onclick="downloadImage(\''+hd+'\')">تحميل الصورة</button>';
 
-'<img src="'+image+'"><br>'+
-'<button onclick="downloadImage(\''+image+'\')">تحميل الصورة</button>';
+};
+
+img.onerror=function(){
+
+document.getElementById("result").innerHTML=
+'<img src="'+hq+'"><br><button onclick="downloadImage(\''+hq+'\')">تحميل الصورة</button>';
+
+};
+
+img.src=hd;
 
 }
-
-
 
 async function downloadImage(url){
 
@@ -202,15 +199,13 @@ let blob=await response.blob();
 let link=document.createElement("a");
 
 link.href=URL.createObjectURL(blob);
-
 link.download="youtube-thumbnail.jpg";
 
 document.body.appendChild(link);
-
 link.click();
-
 document.body.removeChild(link);
 
+URL.revokeObjectURL(link.href);
 
 }catch(error){
 
@@ -221,6 +216,7 @@ window.open(url,"_blank");
 }
 
 </script>
+
 <footer>
 <p>
 <a href="privacy.html">Privacy Policy</a>
