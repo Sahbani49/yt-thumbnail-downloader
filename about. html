@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:800px;
+margin:40px auto;
+padding:20px;
+line-height:1.8;
+background:#f8f9fa;
+}
+
+h1{
+color:#ff0000;
+}
+</style>
+
+</head>
+<body>
+
+<h1>About Us</h1>
+
+<p>
+Welcome to YouTube Thumbnail Downloader.
+</p>
+
+<p>
+Our website provides a free and simple tool to download YouTube video thumbnails in high quality. We aim to make the process fast, easy, and accessible on all devices without requiring registration or software installation.
+</p>
+
+<p>
+We are committed to providing a clean, secure, and user-friendly experience for content creators, students, marketers, and anyone who needs YouTube thumbnails.
+</p>
+
+<p>
+Thank you for using our website.
+</p>
+
+<p>
+<a href="index.html">Back to Home</a>
+</p>
+
+</body>
+</html>
