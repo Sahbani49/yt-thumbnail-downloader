@@ -93,12 +93,8 @@ No registration required. Works directly from your browser.
   </p>
 <div class="container">
 
-<h2>تحميل الصورة المصغرة من YouTube</h2>
-
-<input id="url" placeholder="ضع رابط فيديو YouTube هنا">
-
-<button onclick="getThumbnail()">
-استخراج الصورة
+<h2>YouTube Thumbnail Downloader</h2>" placeholder="Paste YouTube video URL here <button onclick="getThumbnail()">
+Get Thumbnail
 </button>
 
 <div id="result"></div>
@@ -186,7 +182,7 @@ id=url.split("shorts/")[1].substring(0,11);
 }
 
 if(id==""){
-alert("رابط غير صحيح");
+alert("Invalid YouTube URL");
 return;
 }
 
@@ -198,14 +194,12 @@ let img=new Image();
 img.onload=function(){
 
 document.getElementById("result").innerHTML=
-'<img src="'+hd+'"><br><button onclick="downloadImage(\''+hd+'\')">تحميل الصورة</button>';
-
-};
+'<img src="'+hd+'"><br><button onclick="downloadImage(\''+hd+'\')">Download Thumbnail+hd+'\')">
 
 img.onerror=function(){
 
 document.getElementById("result").innerHTML=
-'<img src="'+hq+'"><br><button onclick="downloadImage(\''+hq+'\')">تحميل الصورة</button>';
+'<img src="'+hq+'"><br><button onclick="downloadImage(\''+hq+'\')">Download Thumbnail</button>';
 
 };
 
