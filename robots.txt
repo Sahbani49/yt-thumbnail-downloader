@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sahbani49.github.io/yt-thumbnail-downloader/sitemap.xml
