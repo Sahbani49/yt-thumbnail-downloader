@@ -1,12 +1,12 @@
-const CACHE_NAME = "yt-thumbnail-v1";
+const CACHE_NAME = "yt-thumbnail-v2";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./manifest.json",
-  "./favicon.png",
-  "./icon-192.png",
-  "./icon-512.png"
+  "/yt-thumbnail-downloader/",
+  "/yt-thumbnail-downloader/index.html",
+  "/yt-thumbnail-downloader/manifest.json",
+  "/yt-thumbnail-downloader/favicon.png",
+  "/yt-thumbnail-downloader/icon-192.png",
+  "/yt-thumbnail-downloader/icon-512.png"
 ];
 
 // تثبيت Service Worker
