@@ -1,11 +1,12 @@
 {
-  "name": "PDF Tools",
-  "short_name": "PDF Tools",
-  "description": "Free online PDF tools to convert, merge, split and manage PDF files.",
+  "name": "YouTube Thumbnail Downloader",
+  "short_name": "YT Thumbnail",
+  "description": "Download YouTube thumbnails in HD, Full HD and 4K for free.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0d6efd",
+  "theme_color": "#ff0000",
   "orientation": "portrait",
   "icons": [
     {
