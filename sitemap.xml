@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://sahbani49.github.io/yt-thumbnail-downloader/</loc>
-</url>
+  <url>
+    <loc>https://sahbani49.github.io/yt-thumbnail-downloader/</loc>
+  </url>
 
-<url>
-<loc>https://sahbani49.github.io/yt-thumbnail-downloader/privacy.html</loc>
-</url>
+  <url>
+    <loc>https://sahbani49.github.io/yt-thumbnail-downloader/privacy.html</loc>
+  </url>
 
-<url>
-<loc>https://sahbani49.github.io/yt-thumbnail-downloader/terms.html</loc>
-</url>
+  <url>
+    <loc>https://sahbani49.github.io/yt-thumbnail-downloader/terms.html</loc>
+  </url>
+
+  <url>
+    <loc>https://sahbani49.github.io/yt-thumbnail-downloader/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://sahbani49.github.io/yt-thumbnail-downloader/contact.html</loc>
+  </url>
 
 </urlset>
